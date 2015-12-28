@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<script src="js/jquery-1.9.1.js"></script>
+		<meta charset="utf-8">
+		<title>animate.css</title>
+	</head>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		#wrap{width: 90%;margin-left: 5%;background: #ccc;float: left;margin-top: 2%;}
+		#wrap ul{float: left;overflow: hidden;margin-top: 30px;}
+		#wrap ul li{list-style: none;width: 150px;height: 150px;float: left;background: #333;margin: 20px;cursor: pointer;}
+		#wrap ul li p{text-align: center;height: 150px;width: 150px;line-height: 150px;float: left;color: #fff;font-family: "微软雅黑";}
+		#wrap ul  .temp{width: 100%;height: 2px;background: #333;margin: 0;}
+		
+		nav{width: 100%;position: fixed;left: 0;top: 0;background: #aaa;height: 50px;overflow: hidden;z-index: 100;}
+		nav #menu{float: left;margin: 0;position: relative;width: 100%;}
+		nav #menu li{float: left;width: 6.5%;height: 50px;background: #bbb;margin: 0;margin-left: 0.64%;position: relative;}
+		nav #menu li a{width: 100%;line-height: 50px;text-align: center;position: relative;height: 50px;
+						display: block;font-family: "微软雅黑";text-decoration:none;color: #fff;}
+		nav #menu li:first-child{margin-left: 0;}
+	</style>
+	<body>
+	
+	<div id="wrap">
+		
+		<nav>
+			<ul id="menu">
+				<li><a href="#a">元素抖动</a></li>
+				<li><a href="#b">抖动出现</a></li>
+				<li><a href="#c">抖动消失</a></li>
+				<li><a href="#d">平滑出现</a></li>
+				<li><a href="#e">平滑消失</a></li>
+				<li><a href="#f">翻转动画</a></li>
+				<li><a href="#g">扭曲动画</a></li>
+				<li><a href="#h">旋转出现</a></li>
+				<li><a href="#i">旋转消失</a></li>
+				<li><a href="#j">减速出现</a></li>
+				<li><a href="#k">减速消失</a></li>
+				<li><a href="#l">投掷出现</a></li>
+				<li><a href="#m">投掷消失</a></li>
+				<li><a href="#n">悬挂动画</a></li>
+			</ul>
+		</nav>
+		<ul id="a">
+			<li><p>bounce</p></li>
+			<li><p>flash</p></li>
+			<li><p>pulse</p></li>
+			<li><p>rubberBand</p></li>
+			<li><p>shake</p></li>
+			<li><p>swing</p></li>
+			<li><p>tada</p></li>
+			<li><p>wobble</p></li>
+			<li><p>jello</p></li>
+			
+			<li class="temp" id="b"></li>
+			
+			<li><p>bounceIn</p></li>
+			<li><p>bounceInDown</p></li>
+			<li><p>bounceInLeft</p></li>
+			<li><p>bounceInRight</p></li>
+			<li><p>bounceInUp</p></li>
+			
+			<li class="temp" id="c"></li>
+			
+			<li><p>bounceOut</p></li>
+			<li><p>bounceOutDown</p></li>
+			<li><p>bounceOutLeft</p></li>
+			<li><p>bounceOutRight</p></li>
+			<li><p>bounceOutUp</p></li>
+			
+			<li class="temp" id="d"></li>
+			
+			<li><p>fadeIn</p></li>
+			<li><p>fadeInDown</p></li>
+			<li><p>fadeInDownBig</p></li>
+			<li><p>fadeInLeft</p></li>
+			<li><p>fadeInLeftBig</p></li>
+			<li><p>fadeInRight</p></li>
+			<li><p>fadeInRightBig</p></li>
+			<li><p>fadeInUp</p></li>
+			<li><p>fadeInUpBig</p></li>
+			
+			<li class="temp" id="e"></li>
+			
+			<li><p>fadeOut</p></li>
+			<li><p>fadeOutDown</p></li>
+			<li><p>fadeOutDownBig</p></li>
+			<li><p>fadeOutLeft</p></li>
+			<li><p>fadeOutLeftBig</p></li>
+			<li><p>fadeOutRight</p></li>
+			<li><p>fadeOutRightBig</p></li>
+			<li><p>fadeOutUp</p></li>
+			<li><p>fadeOutUpBig</p></li>
+			
+			<li class="temp" id="f"></li>
+			
+			<li><p>flip</p></li>
+			<li><p>flipInX</p></li>
+			<li><p>flipInY</p></li>
+			<li><p>flipOutX</p></li>
+			<li><p>flipOutY</p></li>
+			
+			<li class="temp" id="g"></li>
+			
+			<li><p>lightSpeedIn</p></li>
+			<li><p>lightSpeedOut</p></li>
+			
+			<li class="temp" id="h"></li>
+			
+			<li><p>rotateIn</p></li>
+			<li><p>rotateInDownLeft</p></li>
+			<li><p>rotateInDownRight</p></li>
+			<li><p>rotateInUpLeft</p></li>
+			<li><p>rotateInUpRight</p></li>
+			
+			<li class="temp" id="i"></li>
+			
+			<li><p>rotateOut</p></li>
+			<li><p>rotateOutDownLeft</p></li>
+			<li><p>rotateOutDownRight</p></li>
+			<li><p>rotateOutUpLeft</p></li>
+			<li><p>rotateOutUpRight</p></li>
+			
+			<li class="temp" id="j"></li>
+			
+			<li><p>slideInUp</p></li>
+			<li><p>slideInDown</p></li>
+			<li><p>slideInLeft</p></li>
+			<li><p>slideInRight</p></li>	
+			
+			<li class="temp" id="k"></li>
+			
+			<li><p>slideOutUp</p></li>
+			<li><p>slideOutDown</p></li>
+			<li><p>slideOutLeft</p></li>
+			<li><p>slideOutRight</p></li>
+			
+			<li class="temp" id="l"></li>
+			
+			<li><p>zoomIn</p></li>
+			<li><p>zoomInDown</p></li>
+			<li><p>zoomInLeft</p></li>
+			<li><p>zoomInRight</p></li>
+			<li><p>zoomInUp</p></li>
+			
+			<li class="temp" id="m"></li>
+			
+			<li><p>zoomOut</p></li>
+			<li><p>zoomOutDown</p></li>
+			<li><p>zoomOutLeft</p></li>
+			<li><p>zoomOutRight</p></li>
+			<li><p>zoomOutUp</p></li>
+			
+			<li class="temp" id="n"></li>
+			
+			<li><p>hinge</p></li>
+			<li><p>rollIn</p></li>
+			<li><p>rollOut</p></li>
+			
+		</ul>
+	</div>
+	
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			
+			var Li = $("#wrap ul li");
+			
+			function removeClass(){
+				var liLength = Li.length;
+				for (var i = 0;i<liLength;i++) {
+					Li.eq(i)
+				}
+			}
+			
+			Li.click(function(){
+				var animateName=$(this).find("p").html();
+				$(this).addClass("animated");
+				$(this).addClass(animateName);
+			})
+		})
+	</script>
+</html>
